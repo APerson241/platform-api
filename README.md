@@ -64,6 +64,12 @@ to the specified redirect_uri with additional parameters passed:
     error=code_gen_error
     error_message=There was a problem while trying to log you in.
 
+Headers
+-------
+
+The Content-Type header should not be used, and will cause the API to return
+a 400 Bad Request error.
+
 Using cURL
 ----------
 
